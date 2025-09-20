@@ -10,7 +10,7 @@ MindMate is a safe, anonymous, and confidential web application designed to prov
 
 Mental health remains a significant societal taboo in India. Young adults and students, facing intense academic and social pressures, often feel isolated with their concerns. The fear of judgment from family and peers, combined with the high cost and scarcity of professional help, creates a formidable barrier to seeking support.  
 
-MindMate was born from the belief that **everyone deserves a safe space to be heard**. It aims to be the crucial first step in a user's wellness journey—a **confidential friend** that listens without judgment, available anytime, anywhere. By leveraging AI, we can offer a scalable, accessible, and private resource to help **destigmatize mental health conversations** and guide users toward the support they need.
+MindMate was born from the belief that **everyone deserves a safe space to be heard**. It aims to be the crucial first step in a user's wellness journey a **confidential friend** that listens without judgment, available anytime, anywhere. By leveraging AI, we can offer a scalable, accessible, and private resource to help **destigmatize mental health conversations** and guide users toward the support they need.
 
 ---
 
@@ -69,4 +69,5 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 # Install the required Python packages
 pip install -r requirements.txt
+
 
