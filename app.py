@@ -1,7 +1,6 @@
 import streamlit as st
 from huggingface_hub import InferenceClient
 
-# --- UI Customization ---
 def local_css():
     css = """
         <style>
@@ -72,8 +71,6 @@ def local_css():
     st.markdown(css, unsafe_allow_html=True)
 
 
-# --- Configuration ---
-# Initialize the Hugging Face Inference Client
 try:
     client = InferenceClient(token=st.secrets["HUGGINGFACE_API_TOKEN"])
 except Exception as e:
@@ -105,7 +102,6 @@ def check_for_crisis(message):
     ]
     return any(keyword in lower_case_message for keyword in crisis_keywords)
 
-# --- App Layout ---
 st.set_page_config(
     page_title="MindMate",
     page_icon=AI_AVATAR,
@@ -118,7 +114,6 @@ st.title(f"{AI_AVATAR} MindMate")
 st.caption("Your safe, anonymous, and confidential space to talk.")
 st.markdown("---")
 
-# --- Chat Logic ---
 if "messages" not in st.session_state:
     st.session_state.messages = [
         {"role": "assistant", "content": "Hello! I'm here to listen. Feel free to share what's on your mind. Remember, this is a safe and anonymous space."}
@@ -135,7 +130,6 @@ if prompt := st.chat_input("What's on your mind?"):
         st.markdown(prompt)
 
     if check_for_crisis(prompt):
-        # --- DEFINITIVE FIX: Use st.markdown with a custom HTML alert box ---
         alert_html = """
         <div style="background-color: #F8D7DA; border: 2px solid #DC3545; border-radius: 12px; padding: 1.5rem; color: black !important;">
             <p style="color: black !important; margin-bottom: 1rem;">🚨 It sounds like you are going through a very difficult time. Please reach out for immediate support. You are not alone.</p>
