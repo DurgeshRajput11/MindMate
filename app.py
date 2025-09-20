@@ -78,7 +78,6 @@ except Exception as e:
     st.stop()
 
 
-# --- Model and Safety Settings ---
 HUGGINGFACE_MODEL = "mistralai/Mistral-7B-Instruct-v0.2"
 
 SYSTEM_PROMPT = """You are a warm, empathetic, and supportive AI wellness companion for youth in India.
