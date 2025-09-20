@@ -2,7 +2,7 @@
 
 MindMate is a safe, anonymous, and confidential web application designed to provide empathetic mental wellness support for youth in India. Built with **Streamlit** and powered by **generative AI**, it offers a non-judgmental space to talk, manage stress, and access help 24/7.
 
-[MIND MATE WEB APP](https://yourmindmate.streamlit.app/)
+[Try Chat With MindMate](https://yourmindmate.streamlit.app/)
 
 ---
 
@@ -69,3 +69,4 @@ source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 
 # Install the required Python packages
 pip install -r requirements.txt
+
